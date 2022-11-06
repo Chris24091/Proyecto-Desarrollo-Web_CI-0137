@@ -1,0 +1,2 @@
+C:\Users\XSF\Documents\Proyecto-Desarrollo-Web_CI-0137\ChizBurgers-Frontend\ChizBurgers-Frontend\obj\Debug\ChizBurgers-Frontend.esproj.SuggestedBindingRedirects.cache
+C:\Users\XSF\Documents\Proyecto-Desarrollo-Web_CI-0137\ChizBurgers-Frontend\ChizBurgers-Frontend\obj\Debug\ChizBurgers-Frontend.esproj.CoreCompileInputs.cache
