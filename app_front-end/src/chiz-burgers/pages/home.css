@@ -1,0 +1,12 @@
+@font-face {
+    font-family: Signika;
+    src: url(src/assets/fonts/Signika-Regular.ttf);
+}
+
+h1 {
+    font-family: Signika;
+}
+
+img {
+    max-width: 100%;
+}

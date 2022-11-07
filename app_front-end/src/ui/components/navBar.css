@@ -1,0 +1,85 @@
+@font-face {
+    font-family: Signika;
+    src: url(src/assets/fonts/Signika-Regular.ttf);
+  }
+
+.navbar {
+    background: #E4E751;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);
+}
+
+.nav-link {
+    font-family: Signika;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: black;
+}
+
+.nav-link:hover {
+    transition: all .2s ease-in-out;
+    color:red;
+    transform: scale(1.09);
+}
+
+.nav-link:hover .underline {
+    background-color: red;
+    width: 100%;
+    height: 3px;
+}
+
+.nav-link:focus {
+    color:red
+}
+
+
+#hr-navbar {
+    height: 2px;
+    width: 100%;
+    color: red;
+}
+
+.Logs {
+    font-family: Signika;
+    width: 7em;
+    border-color: black;
+    border-radius: 2em;
+}
+
+.form-inline .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+}
+
+#menu-button {
+    border: 0ch;
+    background-color: unset;
+    font-size:xx-large;
+    font-weight: bold;
+    padding-bottom: 10px;
+    margin-left: 0.6em;;
+}
+
+.active {
+    color: red;
+}
+
+.underline {
+    height: 2px;
+	background-color: transparent;
+	width: 0%;
+	transition: width 0.2s, background-color 0.5s;
+	margin: 0 auto;
+}
+
+.active .underline {
+    width: 100%;
+	background-color: red;
+    height: 3px;
+    border-radius: 20em;
+}
+
+.navbar-centro {
+    margin-left: 5%;
+    margin-right: 5%;
+}
