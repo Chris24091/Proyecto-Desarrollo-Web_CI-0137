@@ -69,7 +69,7 @@ export const Navbar = () => {
                             className={({ isActive }) => `nav-item  mx-1 nav-link  ${isActive ? 'active' : ''}`}
                             to="/"
                         >
-                            Contácto
+                            Contacto
                             <div className="underline"></div>
                         </NavLink>
                 </div>
@@ -78,7 +78,7 @@ export const Navbar = () => {
                         className="Logs"
                         onClick={onLogout}
                     >
-                        <span>Iniciar Sesión</span>
+                        <span>Iniciar sesión</span>
                     </button>
                     <button id="menu-button" onClick={showNavBar}>
                         <FaBars />

@@ -3,10 +3,14 @@
     src: url(src/assets/fonts/Signika-Regular.ttf);
 }
 
+body {
+    margin: 0;
+}
+
 h1 {
     font-family: Signika;
 }
 
-img {
+.img-destacada {
     max-width: 100%;
 }
