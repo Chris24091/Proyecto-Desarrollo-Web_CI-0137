@@ -1,0 +1,25 @@
+@font-face {
+    font-family: Signika;
+    src: url(src/assets/fonts/Signika-Regular.ttf);
+}
+
+.contenedor-cartas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card {
+    width: 30rem;
+    margin-bottom: 5rem;
+    border-color: black;
+    border-radius: 20px;
+}
+
+.cuerpo-carta {
+    height: 100px;
+}
+
+p {
+    font-family: Signika;
+}

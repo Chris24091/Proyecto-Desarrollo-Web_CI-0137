@@ -6,7 +6,7 @@ export const HomePage = () => {
       <div className="container-md mt-5">
         <h1>Ordena ya!</h1>
         <hr />
-        <img src="src/assets/Images/imagen-destacada.svg"/>
+        <img src="src/assets/Images/producto1.svg"/>
       </div>
     </>
   )
