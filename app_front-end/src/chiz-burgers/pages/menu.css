@@ -6,14 +6,15 @@
 .contenedor-cartas {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .card {
     width: 30rem;
     margin-bottom: 5rem;
-    border-color: black;
+    border-color: rgb(104, 104, 104);
     border-radius: 20px;
+    margin: 20px;
 }
 
 .cuerpo-carta {
@@ -22,4 +23,13 @@
 
 p {
     font-family: Signika;
+}
+
+.card-name {
+    font-size: 1.5rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.card-price {
+    font-size: 1.2rem;
 }
