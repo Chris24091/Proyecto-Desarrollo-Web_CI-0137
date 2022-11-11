@@ -17,8 +17,6 @@ export const AppRoutes = () => {
                 <Route path="/" element={<Navigate to="/home" />} />
             </Routes>
         </div>
-
-
     </>
   )
 }

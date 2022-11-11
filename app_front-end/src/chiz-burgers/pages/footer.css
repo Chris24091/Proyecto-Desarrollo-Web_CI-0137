@@ -1,0 +1,18 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px; 
+}
+
+.contenedor-footer {
+    display: flex;
+    justify-content: center;
+    background-color: #290D0D;
+    height: fit-content;
+}
+
+.footer-text {
+    font-size: 1.6rem;
+    color: #DAD4C7;
+}
