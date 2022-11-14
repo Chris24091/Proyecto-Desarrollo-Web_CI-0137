@@ -75,12 +75,12 @@ export const Navbar = () => {
                 </div>
                 <div className="navbar-collapse collapse dual-collapse2 d-flex justify-content-end">
                     <button
-                        className="Logs"
+                        className="Logs mx-2"
                         onClick={onLogout}
                     >
                         <span>Iniciar sesión</span>
                     </button>
-                    <button id="menu-button" onClick={showNavBar}>
+                    <button className='d-sm-none' id="menu-button" onClick={showNavBar}>
                         <FaBars />
                     </button>
                 </div>

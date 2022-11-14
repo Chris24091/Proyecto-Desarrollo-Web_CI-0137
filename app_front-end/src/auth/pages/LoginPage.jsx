@@ -4,13 +4,26 @@ import { Formik, Form, Field, ErrorMessage } from 'formik'
 import './login.css'
 
 export const LoginPage = () => {
-  const [FormularioEnviado, cambiarFormEnviado] = useState(false);
+  const [CredencialesInvalidas, CambiarValidezCredencial] = useState(false);
   const navigate = useNavigate();
 
   const onLogin = () => {
     navigate('/', {
       replace: true
     });
+  }
+
+  const verificarUsuario = (valores) => {
+    console.log(CredencialesInvalidas);
+    let result = true;  
+
+    if (valores.correo === "wilmeraraya21@gmail.com") {
+      result=false;
+    }
+    if (valores.pass === "admin1234") {
+      result=false;
+    }
+    return result;
   }
 
   return (
@@ -44,11 +57,16 @@ export const LoginPage = () => {
                 return errores;
               }}
 
+
               onSubmit={(valores, { resetForm }) => {
-                console.log(valores)
-                resetForm();
-                cambiarFormEnviado(true);
-                setTimeout(() => cambiarFormEnviado(false), 5000);
+                console.log(CredencialesInvalidas);
+                if (verificarUsuario(valores)) {
+                  CambiarValidezCredencial(true);
+                } else {
+                  navigate('/home', {
+                    replace: true
+                  });
+                }
               }}
             >
               {({ errors }) => (
@@ -56,7 +74,7 @@ export const LoginPage = () => {
 
                   <div className='row justify-content-center flex-column'>
                     <div className='col'>
-                    <label className='label-input' htmlFor='correo'>Correo electrónico</label>
+                      <label className='label-input' htmlFor='correo'>Correo electrónico</label>
                       <Field
                         className='w-100 input-login effect-18'
                         type="email"
@@ -72,7 +90,7 @@ export const LoginPage = () => {
 
                   <div className='row justify-content-center flex-column'>
                     <div className='col'>
-                    <label className='label-input' htmlFor='pass'>Contraseña</label>
+                      <label className='label-input' htmlFor='pass'>Contraseña</label>
                       <Field
                         className='w-100 input-login'
                         type="password"
@@ -93,6 +111,9 @@ export const LoginPage = () => {
                         className='boton-enviar'>
                         Iniciar sesión
                       </button>
+                    </div>
+                    <div className='col d-flex justify-content-center mt-2'>
+                      {CredencialesInvalidas && <span className='error'>Ingrese un usuario válido</span>}
                     </div>
                   </div>
                 </Form>
