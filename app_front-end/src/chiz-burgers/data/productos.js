@@ -22,5 +22,35 @@ export const productos = [
         'name': 'The crusty potatoes',
         'price': '$ 2.99',
         'tipo': 'producto'
+    },
+    {
+        'id':'producto5',
+        'name': 'The crispy risky',
+        'price': '$ 4.99',
+        'tipo': 'producto'
+    },
+    {
+        'id':'producto6',
+        'name': 'The classic patty',
+        'price': '$ 3.99',
+        'tipo': 'producto'
+    },
+    {
+        'id':'producto7',
+        'name': 'The tasty rings',
+        'price': '$ 2.99',
+        'tipo': 'producto'
+    },
+    {
+        'id':'producto8',
+        'name': 'The chiz sandwich',
+        'price': '$ 4.99',
+        'tipo': 'producto'
+    },
+    {
+        'id':'producto9',
+        'name': 'The bello portobello',
+        'price': '$ 2.99',
+        'tipo': 'producto'
     }
 ]

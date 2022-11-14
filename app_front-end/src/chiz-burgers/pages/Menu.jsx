@@ -8,8 +8,6 @@ export const Menu = () => {
                 <h1>Productos</h1>
                 <hr />
                 <FoodList/>
-
-
             </div>
         </>
     )

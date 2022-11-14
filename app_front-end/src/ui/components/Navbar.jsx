@@ -51,7 +51,7 @@ export const Navbar = () => {
 
                         <NavLink
                             className={({ isActive }) => `nav-item  mx-1 nav-link  ${isActive ? 'active' : ''}`}
-                            to="/"
+                            to="/promociones"
                         >
                             Promociones
                             <div className="underline"></div>
