@@ -4,6 +4,7 @@ import { HomePage } from '../pages/HomePage';
 import { Menu } from '../pages/Menu';
 import { Promociones } from '../pages/Promociones';
 
+import { ContactoPage } from '../pages/ContactoPage';
 
 export const AppRoutes = () => {
   return (
@@ -15,6 +16,7 @@ export const AppRoutes = () => {
                 <Route path="home" element={<HomePage />} />
                 <Route path="menu" element={<Menu />} />
                 <Route path="promociones" element={<Promociones />} />
+                <Route path="contacto" element={<ContactoPage />} />
 
                 <Route path="/" element={<Navigate to="/home" />} />
             </Routes>
