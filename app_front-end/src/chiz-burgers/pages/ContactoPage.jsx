@@ -10,7 +10,7 @@ export const ContactoPage = () => {
   return (
     <>
       <div className='form'></div>
-      <div className="container-sm mt-5 align-items-center">
+      <div className="container-sm contenedor-contacto mt-5 align-items-center">
         <div className='text-center'>
           <h3>Contáctanos</h3>
           <p>
