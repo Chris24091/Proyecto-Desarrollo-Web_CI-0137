@@ -2,7 +2,7 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 import { Navbar } from '../../ui';
 import { HomePage } from '../pages/HomePage';
 import { Menu } from '../pages/Menu';
-
+import { ContactoPage } from '../pages/ContactoPage';
 
 export const AppRoutes = () => {
   return (
@@ -13,6 +13,7 @@ export const AppRoutes = () => {
             <Routes>
                 <Route path="home" element={<HomePage />} />
                 <Route path="menu" element={<Menu />} />
+                <Route path="contacto" element={<ContactoPage />} />
 
                 <Route path="/" element={<Navigate to="/home" />} />
             </Routes>
