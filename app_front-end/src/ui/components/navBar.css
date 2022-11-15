@@ -85,3 +85,11 @@
     margin-right: 5%;
 }
 
+.nombre-usuario {
+    color: white;
+    background-color: #290d0d;
+    font-family: Signika;
+    padding: 1%;
+    font-size: small;
+    border-radius: 20px;
+}

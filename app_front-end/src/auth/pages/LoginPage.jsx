@@ -2,27 +2,26 @@ import { useNavigate } from 'react-router-dom';
 import { useState } from 'react'
 import { Formik, Form, Field, ErrorMessage } from 'formik'
 import './login.css'
+import { Navbar } from '../../ui';
 
-export const LoginPage = () => {
+export const LoginPage = (
+  {
+    usuarioRegistrado,
+    cambiarRegistrado,
+    nombreUsuario,
+    cambiarNombreUsuario
+  }) => {
   const [CredencialesInvalidas, CambiarValidezCredencial] = useState(false);
   const navigate = useNavigate();
 
-  const onLogin = () => {
-    navigate('/', {
-      replace: true
-    });
-  }
-
   const verificarUsuario = (valores) => {
-    console.log(CredencialesInvalidas);
-    let result = true;  
+    console.log('Credenciales', CredencialesInvalidas);
+    let result = false;
 
-    if (valores.correo === "wilmeraraya21@gmail.com") {
-      result=false;
+    if (valores.correo === "wilmeraraya21@gmail.com" && valores.pass === "admin1234") {
+      result = true;
     }
-    if (valores.pass === "admin1234") {
-      result=false;
-    }
+
     return result;
   }
 
@@ -39,8 +38,7 @@ export const LoginPage = () => {
 
               initialValues={{
                 pass: '',
-                correo: '',
-                mensaje: ''
+                correo: ''
               }}
 
               validate={(valores) => {
@@ -60,11 +58,14 @@ export const LoginPage = () => {
 
               onSubmit={(valores, { resetForm }) => {
                 console.log(CredencialesInvalidas);
-                if (verificarUsuario(valores)) {
+                if (!verificarUsuario(valores)) {
                   CambiarValidezCredencial(true);
                 } else {
+                  cambiarRegistrado(true);
+                  cambiarNombreUsuario(valores.correo);
+                  console.log(usuarioRegistrado);
                   navigate('/home', {
-                    replace: true
+                    replace: false
                   });
                 }
               }}
