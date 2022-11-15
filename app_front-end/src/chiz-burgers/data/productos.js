@@ -19,7 +19,7 @@ export const productos = [
     },
     {
         'id':'producto4',
-        'name': 'The crusty potatoes',
+        'name': 'The crusty fries',
         'price': '$ 2.99',
         'tipo': 'producto'
     },
@@ -49,8 +49,8 @@ export const productos = [
     },
     {
         'id':'producto9',
-        'name': 'The bello portobello',
-        'price': '$ 2.99',
+        'name': 'The bello porto',
+        'price': '$ 7.99',
         'tipo': 'producto'
     }
 ]

@@ -1,3 +1,3 @@
 export * from './HomePage'
-export * from './Menu'
-export * from './Promociones'
+export * from './MenuPage'
+export * from './PromocionesPage'

@@ -93,3 +93,8 @@
     font-size: small;
     border-radius: 20px;
 }
+#small-nav {
+    display: none;
+}
+
+

@@ -1,5 +1,6 @@
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { FaBars, FaTimes } from "react-icons/fa";
+import { SmallNav } from "./SmallNav"; 
 import { useState } from 'react';
 import './navBar.css';
 
@@ -24,9 +25,16 @@ export const Navbar = (
     }
 
     const showNavBar = () => {
-        navRef.current.classList.toggle("responsive_nav");
+        var navRef = document.getElementById('small-nav');
+        if (navRef.style.display === "none") {
+            navRef.style.display = "flex";
+            navRef.style.visibility = "visible";
+        } else {
+            navRef.style.display = "none";
+            navRef.style.visibility = "hidden";
+        }
     }
-
+    
     return (
         <>
             <nav className="navbar navbar-expand-sm p-2">
@@ -105,8 +113,11 @@ export const Navbar = (
                     </div>
                 }
                 <button className='d-sm-none' id="menu-button" onClick={showNavBar}>
-                    <FaBars />
+                    <FaBars />                     
                 </button>
+                    <div className='small-nav' id='small-nav'>
+                        <SmallNav />
+                    </div>
             </nav>
         </>
     )

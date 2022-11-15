@@ -4,8 +4,9 @@
 }
 
 body {
-    margin-bottom: 4rem;
+    margin: 0;
     background-color: #DAD4C7;
+    margin-bottom: 4rem;
 }
 
 h1 {
@@ -14,4 +15,8 @@ h1 {
 
 img {
     max-width: 100%;
+}
+
+.imagen-logo {
+    margin-top: 50px;
 }
