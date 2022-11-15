@@ -18,7 +18,7 @@ export const LoginPage = (
     console.log('Credenciales', CredencialesInvalidas);
     let result = false;
 
-    if (valores.correo === "wilmeraraya21@gmail.com" && valores.pass === "admin1234") {
+    if (valores.correo === "chiz@gmail.com" && valores.pass === "admin1234") {
       result = true;
     }
 
