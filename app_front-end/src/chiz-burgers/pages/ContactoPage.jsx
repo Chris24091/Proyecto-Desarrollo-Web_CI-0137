@@ -1,4 +1,3 @@
-import { props } from 'prop-types'
 import { useState } from 'react'
 import { Formik, Form, Field, ErrorMessage } from 'formik'
 import './contacto.css'

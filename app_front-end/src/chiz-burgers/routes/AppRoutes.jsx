@@ -1,8 +1,8 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import { Navbar } from '../../ui';
 import { HomePage } from '../pages/HomePage';
-import { Menu } from '../pages/Menu';
-import { Promociones } from '../pages/Promociones';
+import { Menu } from '../pages/MenuPage';
+import { Promociones } from '../pages/PromocionesPage';
 
 import { ContactoPage } from '../pages/ContactoPage';
 

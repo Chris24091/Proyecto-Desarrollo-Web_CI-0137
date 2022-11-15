@@ -10,11 +10,26 @@
 }
 
 .card {
+    display: flex;
+    align-items: center;
     width: 30rem;
+    border: none;
+    background-color: transparent;
     margin-bottom: 5rem;
-    border-color: rgb(104, 104, 104);
-    border-radius: 20px;
     margin: 20px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    border: solid;
+    border-color: #290D0D;
+    border-width: 2px;
+    border-radius: 20px;
 }
 
 .cuerpo-carta {
@@ -32,4 +47,10 @@ p {
 
 .card-price {
     font-size: 1.2rem;
+    margin-left: 35px;
+}
+
+.card-img {
+    width: 95%;
+    margin-bottom: -1rem;
 }
