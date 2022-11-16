@@ -6,21 +6,32 @@ import { Promociones } from '../pages/PromocionesPage';
 
 import { ContactoPage } from '../pages/ContactoPage';
 
-export const AppRoutes = () => {
+export const AppRoutes = (
+  {
+    usuarioRegistrado,
+    cambiarRegistrado,
+    nombreUsuario,
+    cambiarNombreUsuario
+  }) => {
   return (
     <>
-        <Navbar />
+      <Navbar  
+            usuarioRegistrado={usuarioRegistrado}
+            cambiarRegistrado={cambiarRegistrado}
+            nombreUsuario={nombreUsuario}
+            cambiarNombreUsuario={cambiarNombreUsuario}
+      />
 
-        <div className="container">
-            <Routes>
-                <Route path="home" element={<HomePage />} />
-                <Route path="menu" element={<Menu />} />
-                <Route path="promociones" element={<Promociones />} />
-                <Route path="contacto" element={<ContactoPage />} />
+      <div className="container">
+        <Routes>
+          <Route path="home" element={<HomePage />} />
+          <Route path="menu" element={<Menu />} />
+          <Route path="promociones" element={<Promociones />} />
+          <Route path="contacto" element={<ContactoPage />} />
 
-                <Route path="/" element={<Navigate to="/home" />} />
-            </Routes>
-        </div>
+          <Route path="/" element={<Navigate to="/home" />} />
+        </Routes>
+      </div>
     </>
   )
 }
