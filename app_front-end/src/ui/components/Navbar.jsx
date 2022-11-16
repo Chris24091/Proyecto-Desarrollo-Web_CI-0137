@@ -78,14 +78,6 @@ export const Navbar = (
 
                     <NavLink
                         className={({ isActive }) => `nav-item  mx-1 nav-link  ${isActive ? 'active' : ''}`}
-                        to="/"
-                    >
-                        Cupones
-                        <div className="underline"></div>
-                    </NavLink>
-
-                    <NavLink
-                        className={({ isActive }) => `nav-item  mx-1 nav-link  ${isActive ? 'active' : ''}`}
                         to="/contacto"
                     >
                         Contacto
@@ -116,7 +108,7 @@ export const Navbar = (
                 <button className='d-sm-none' id="menu-button" onClick={showNavBar}>
                     <FaBars />                     
                 </button>
-                    <div className='small-nav .d-block .d-sm-none' id='small-nav'>
+                    <div className='small-nav d-sm-none' id='small-nav'>
                         <SmallNav />
                     </div>
             </nav>

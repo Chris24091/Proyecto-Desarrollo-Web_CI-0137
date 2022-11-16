@@ -33,14 +33,6 @@ export const SmallNav = () => {
 
                         <NavLink
                             className={({ isActive }) => `nav-item  mx-1 nav-link  ${isActive ? 'active' : ''}`}
-                            to="/"
-                        >
-                            Cupones
-                            <div className="underline"></div>
-                        </NavLink>
-
-                        <NavLink
-                            className={({ isActive }) => `nav-item  mx-1 nav-link  ${isActive ? 'active' : ''}`}
                             to="/contacto"
                         >
                             Contacto
