@@ -7,7 +7,7 @@ export const Promociones = () => {
                 <h1>Promociones</h1>
                 <hr />
                 <div className='contenedor-promo'>
-                    <img className='imagen-logo' src="src/assets/Images/promo1.svg" />
+                    <img className='imagen-logo' src="src/assets/Images/promo0.svg" />
                     <div className="desc-promo">
                         <p className='texto-promo'>Tres classic patties por:</p>
                         <p className='precio-promo'> $7.99</p>
@@ -19,7 +19,7 @@ export const Promociones = () => {
                             <img src="" className="card-img" alt="" />
                             <div className="card-body-promo">
                                 <div className='card-data'>
-                                    <p className='card-name'>Promo #1</p>
+                                    <p className='card-promo-name'>Promo #1</p>
                                     <ul>
                                         <li>Dos moody bacon's</li>
                                         <li>Unas crusty potatoes</li>
@@ -38,7 +38,7 @@ export const Promociones = () => {
                             <img src="" className="card-img" alt="" />
                             <div className="card-body-promo">
                                 <div className='card-data'>
-                                    <p className='card-name'>Promo #2</p>
+                                    <p className='card-promo-name'>Promo #2</p>
                                     <ul>
                                         <li>Un chiz sandwich</li>
                                         <li>Dos bello portobello</li>
@@ -57,7 +57,7 @@ export const Promociones = () => {
                             <img src="" className="card-img" alt="" />
                             <div className="card-body-promo">
                                 <div className='card-data'>
-                                    <p className='card-name'>Promo #3</p>
+                                    <p className='card-promo-name'>Promo #3</p>
                                     <ul>
                                         <li>Tres fire strips's</li>
                                         <li>Tres crusty potatoes</li>
