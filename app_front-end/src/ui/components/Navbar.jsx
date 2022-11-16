@@ -16,6 +16,7 @@ export const Navbar = () => {
 
     const showNavBar = () => {
         var navRef = document.getElementById('small-nav');
+        var button = document.getElementById('menu-button')
         if (navRef.style.display === "none") {
             navRef.style.display = "flex";
             navRef.style.visibility = "visible";
@@ -91,7 +92,7 @@ export const Navbar = () => {
                     <button className='d-sm-none' id="menu-button" onClick={showNavBar}>
                         <FaBars />                     
                     </button>
-                    <div className='small-nav' id='small-nav'>
+                    <div className='small-nav .d-block .d-sm-none' id='small-nav'>
                         <SmallNav />
                     </div>
                 </div>
