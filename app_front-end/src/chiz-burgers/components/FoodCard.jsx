@@ -12,6 +12,7 @@ export const FoodCard = ({
     // const charactesByHero =  (<p>{ characters }</p>);
 
     return (
+        <Link to={`/producto/${ id }`}>
             <div className="col d-flex justify-content-center">
                 <div className="card" >
                     <img src={ foodImageUrl } className="card-img" alt={ name }/>
@@ -21,5 +22,6 @@ export const FoodCard = ({
                     </div>
                 </div>
             </div>
+        </Link>
     )
 }

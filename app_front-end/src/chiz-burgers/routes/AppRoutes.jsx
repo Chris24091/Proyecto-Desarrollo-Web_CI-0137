@@ -3,6 +3,7 @@ import { Navbar } from '../../ui';
 import { HomePage } from '../pages/HomePage';
 import { Menu } from '../pages/MenuPage';
 import { Promociones } from '../pages/PromocionesPage';
+import { ProductoPage } from '../pages/ProductoPage'
 
 import { ContactoPage } from '../pages/ContactoPage';
 
@@ -28,6 +29,7 @@ export const AppRoutes = (
           <Route path="menu" element={<Menu />} />
           <Route path="promociones" element={<Promociones />} />
           <Route path="contacto" element={<ContactoPage />} />
+          <Route path="producto/:id" element={<ProductoPage />}/>
 
           <Route path="/" element={<Navigate to="/home" />} />
         </Routes>
