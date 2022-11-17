@@ -1,6 +1,6 @@
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { FaBars, FaTimes } from "react-icons/fa";
-import { SmallNav } from "./SmallNav"; 
+import { SmallNav } from "./SmallNav";
 import { useState } from 'react';
 import './navBar.css';
 
@@ -35,82 +35,92 @@ export const Navbar = (
             navRef.style.visibility = "hidden";
         }
     }
-    
+
     return (
         <>
             <nav className="navbar navbar-expand-sm p-2">
 
-                <Link
-                    className="navbar-brand mx-3"
-                    to="/"
-                >
-                    <img
-                        src={`src/assets/Images/logo.svg`}
-                        alt="Logo"
-                    ></img>
-                </Link>
+                <div className='row'>
 
-                <div className="collapse navbar-collapse w-100 justify-content-center navbar-nav navbar-centro">
+                    <div className='col-4 d-flex justify-content-start align-items-center'>
+                        <Link
+                            className="navbar-brand mx-3"
+                            to="/"
+                        >
+                            <img
+                                src={`src/assets/Images/logo.svg`}
+                                alt="Logo"
+                            ></img>
+                        </Link>
+                    </div>
 
-                    <NavLink
-                        className={({ isActive }) => `nav-item  nav-link mx-1 ${isActive ? 'active' : ''}`}
-                        to="/home"
-                    >
-                        Inicio
-                        <div className="underline"></div>
-                    </NavLink>
+                    <div className='col-4 d-flex justify-content-center align-items-center'>
+                        <div className="collapse navbar-collapse w-100 justify-content-center navbar-nav navbar-centro">
 
-                    <NavLink
-                        className={({ isActive }) => `nav-item  mx-1 nav-link  ${isActive ? 'active' : ''}`}
-                        to="/menu"
-                    >
-                        Menú
-                        <div className="underline"></div>
-                    </NavLink>
+                            <NavLink
+                                className={({ isActive }) => `nav-item  nav-link mx-1 ${isActive ? 'active' : ''}`}
+                                to="/home"
+                            >
+                                Inicio
+                                <div className="underline"></div>
+                            </NavLink>
 
-                    <NavLink
-                        className={({ isActive }) => `nav-item  mx-1 nav-link  ${isActive ? 'active' : ''}`}
-                        to="/promociones"
-                    >
-                        Promociones
-                        <div className="underline"></div>
-                    </NavLink>
+                            <NavLink
+                                className={({ isActive }) => `nav-item  mx-1 nav-link  ${isActive ? 'active' : ''}`}
+                                to="/menu"
+                            >
+                                Menú
+                                <div className="underline"></div>
+                            </NavLink>
 
-                    <NavLink
-                        className={({ isActive }) => `nav-item  mx-1 nav-link  ${isActive ? 'active' : ''}`}
-                        to="/contacto"
-                    >
-                        Contacto
-                        <div className="underline"></div>
-                    </NavLink>
+                            <NavLink
+                                className={({ isActive }) => `nav-item  mx-1 nav-link  ${isActive ? 'active' : ''}`}
+                                to="/promociones"
+                            >
+                                Promociones
+                                <div className="underline"></div>
+                            </NavLink>
+
+                            <NavLink
+                                className={({ isActive }) => `nav-item  mx-1 nav-link  ${isActive ? 'active' : ''}`}
+                                to="/contacto"
+                            >
+                                Contacto
+                                <div className="underline"></div>
+                            </NavLink>
+                        </div>
+                    </div>
+
+                    <div className='col-4 d-flex justify-content-end align-items-center'>
+                        {!usuarioRegistrado &&
+                            <div className="navbar-collapse collapse dual-collapse2 d-flex justify-content-end">
+                                <button
+                                    className="Logs mx-2"
+                                    onClick={onLogin}
+                                >
+                                    <span>Iniciar sesión</span>
+                                </button>
+                            </div>
+                        }
+                        {usuarioRegistrado &&
+                            <div className="navbar-collapse collapse dual-collapse2 d-flex justify-content-end">
+                                <span className='nombre-usuario'>{nombreUsuario}</span>
+                                <button
+                                    className="Logs mx-2"
+                                    onClick={onLogout}
+                                >
+                                    <span>Cerrar sesión</span>
+                                </button>
+                            </div>
+                        }
+                        <button className='d-sm-none' id="menu-button" onClick={showNavBar}>
+                            <FaBars />
+                        </button>
+                        <div className='small-nav d-sm-none' id='small-nav'>
+                            <SmallNav />
+                        </div>
+                    </div>
                 </div>
-                {!usuarioRegistrado &&
-                    <div className="navbar-collapse collapse dual-collapse2 d-flex justify-content-end">
-                        <button
-                            className="Logs mx-2"
-                            onClick={onLogin}
-                        >
-                            <span>Iniciar sesión</span>
-                        </button>
-                    </div>
-                }
-                {usuarioRegistrado &&
-                    <div className="navbar-collapse collapse dual-collapse2 d-flex justify-content-end">
-                        <span className='nombre-usuario'>{nombreUsuario}</span>
-                        <button
-                            className="Logs mx-2"
-                            onClick={onLogout}
-                        >
-                            <span>Cerrar sesión</span>
-                        </button>
-                    </div>
-                }
-                <button className='d-sm-none' id="menu-button" onClick={showNavBar}>
-                    <FaBars />                     
-                </button>
-                    <div className='small-nav d-sm-none' id='small-nav'>
-                        <SmallNav />
-                    </div>
             </nav>
         </>
     )
