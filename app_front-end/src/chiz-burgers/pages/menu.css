@@ -17,6 +17,7 @@
     background-color: transparent;
     margin-bottom: 5rem;
     margin: 20px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.75));
 }
 
 .card-body {
@@ -71,6 +72,7 @@ p {
     font-weight: 600;
     border: none;
     font-family: Signika;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.75));
 }
 
     .boton-buscar:hover {
@@ -93,9 +95,14 @@ p {
         box-shadow: 0px;
     }
 
-.form-control:focus {
-    box-shadow: none;
+
+.form-control {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.75));
 }
+
+    .form-control:focus {
+        box-shadow: none;
+    }
 
 .alert {
     font-family: Signika;
@@ -127,4 +134,5 @@ p {
         padding-left: 1rem;
         padding-right: 1rem;
         text-decoration: none;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.75));
     }

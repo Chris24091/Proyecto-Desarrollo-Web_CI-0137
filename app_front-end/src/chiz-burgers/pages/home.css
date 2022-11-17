@@ -20,3 +20,8 @@ img {
 .imagen-logo {
     margin-top: 50px;
 }
+
+.imagen-destacada {
+    margin-top: 50px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.75));
+}
