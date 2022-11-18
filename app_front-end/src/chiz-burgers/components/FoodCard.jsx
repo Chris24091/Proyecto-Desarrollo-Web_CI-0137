@@ -7,7 +7,7 @@ export const FoodCard = ({
     price,
 }) => {
 
-    const foodImageUrl = `src/assets/Images/${ id }.svg`;
+    const foodImageUrl = `/src/assets/Images/${ id }.svg`;
 
     // const charactesByHero =  (<p>{ characters }</p>);
 

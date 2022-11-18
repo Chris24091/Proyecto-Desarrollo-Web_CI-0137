@@ -48,7 +48,7 @@ export const Navbar = (
                             to="/"
                         >
                             <img
-                                src={`src/assets/Images/logo.svg`}
+                                src={`/src/assets/Images/logo.svg`}
                                 alt="Logo"
                             ></img>
                         </Link>

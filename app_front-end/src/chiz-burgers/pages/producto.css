@@ -1,11 +1,13 @@
 @font-face {
     font-family: Signika;
-    src: url(src/assets/fonts/Signika-Regular.ttf);
+    src: url(/src/assets/fonts/Signika-Regular.ttf);
 }
 
 .producto-card{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     border: solid;
     background-color: white;
     border: solid;
@@ -13,4 +15,59 @@
     border-width: 2px;
     border-radius: 20px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.75));
+    margin-top: 5rem;
+}
+
+.nombre-producto {
+    margin-top: 3rem;
+}
+
+.card-img-producto {
+    margin-left: -0.1rem;
+}
+
+.ingredientes {
+    padding: 2rem;
+    padding-right: 4rem;
+    border-right: solid;
+    border-width: 0.15rem;
+    margin-left: -5rem;
+}
+
+.ingredientes-titulo{
+    margin-bottom: 2rem;
+}
+
+.lista-ingredientes {
+    margin: 0px;
+}
+
+.ingrediente {
+    margin: 0px;
+}
+
+.desc-producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 7rem;
+}
+
+.precio-prod {
+    display: flex;
+}
+
+.calorias {
+    font-size: 1.7rem;
+    margin-bottom: 4rem;
+}
+
+.precio-titulo {
+    font-size: 1.7rem;
+}
+
+.precio-producto {
+    margin-left: 1rem;
+    font-size: 1.7rem;
+    font-weight: bold;
 }

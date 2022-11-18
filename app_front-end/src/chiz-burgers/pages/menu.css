@@ -1,6 +1,6 @@
 @font-face {
     font-family: Signika;
-    src: url(src/assets/fonts/Signika-Regular.ttf);
+    src: url(/src/assets/fonts/Signika-Regular.ttf);
 }
 
 .contenedor-cartas {
