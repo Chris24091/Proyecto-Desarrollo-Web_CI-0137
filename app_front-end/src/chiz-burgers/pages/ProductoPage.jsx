@@ -13,9 +13,9 @@ export const ProductoPage = ({
         <>
             <h1 className="nombre-producto">{producto.name}</h1>
             <hr/>
-            <div className="producto-card">
-                <img src={foodImageUrl} className="card-img-producto" alt={producto.name} />
-                <div className="ingredientes">
+            <div className="producto-card row">
+                <img src={foodImageUrl} className="card-img-producto col d-flex justify-content-start" alt={producto.name} />
+                <div className="ingredientes col">
                     <h2 className="ingredientes-titulo">Ingredientes</h2>
                     <ul className="lista-ingredientes">
                         {
@@ -25,7 +25,7 @@ export const ProductoPage = ({
                         }
                     </ul>
                 </div>
-                <div className="desc-producto">
+                <div className="desc-producto col">
                     <div className="cal">
                         <p className="calorias">{producto.calorias}</p>
                     </div>

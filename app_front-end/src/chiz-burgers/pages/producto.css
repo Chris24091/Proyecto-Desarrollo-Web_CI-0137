@@ -13,7 +13,7 @@
     border: solid;
     border-color: #290D0D;
     border-width: 2px;
-    border-radius: 20px;
+    border-radius: 23px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.75));
     margin-top: 5rem;
 }
@@ -23,7 +23,7 @@
 }
 
 .card-img-producto {
-    margin-left: -0.1rem;
+    padding: 0px; 
 }
 
 .ingredientes {
@@ -31,7 +31,6 @@
     padding-right: 4rem;
     border-right: solid;
     border-width: 0.15rem;
-    margin-left: -5rem;
 }
 
 .ingredientes-titulo{
@@ -50,16 +49,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 7rem;
 }
 
 .precio-prod {
     display: flex;
+    margin-top: 2rem;
 }
 
 .calorias {
     font-size: 1.7rem;
-    margin-bottom: 4rem;
 }
 
 .precio-titulo {
