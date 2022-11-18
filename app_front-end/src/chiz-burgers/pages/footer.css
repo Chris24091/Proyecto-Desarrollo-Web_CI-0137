@@ -6,13 +6,12 @@
 }
 
 .contenedor-footer {
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     background-color: #290D0D;
-    height: fit-content;
 }
 
 .footer-text {
     font-size: 1.6rem;
-    color: #DAD4C7;
+    color: rgb(218, 212, 199);
 }

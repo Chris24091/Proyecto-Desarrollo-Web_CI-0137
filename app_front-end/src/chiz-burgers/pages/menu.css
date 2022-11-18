@@ -20,6 +20,12 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.75));
 }
 
+.card:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.05);
+    filter: drop-shadow(0px 9px 9px #e5e751ee);
+}
+
 .card-body {
     display: flex;
     flex-direction: row;
@@ -111,9 +117,11 @@ p {
 .link-productos {
     margin-top: 40px;
     font-family: Signika;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.75));
 }
 
     .link-productos a {
+        color: white;
         font-size: 1.5rem;
         background-color: #290D0D;
         border-radius: 20px;
@@ -125,18 +133,22 @@ p {
     }
 
     .link-productos a:hover {
-        color: rgb(0, 0, 0);
-        background-color: #290D0D;
+        color: rgb(255, 255, 255);
+        background-color: #524444;
         border-radius: 20px;
         padding-top: .5rem;
         padding-bottom: .5rem;
         padding-left: 1rem;
         padding-right: 1rem;
         text-decoration: none;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.75));
     }
 
-a {
-    color: inherit;
+.productos-detalles {
+    color: #290D0D;
+    text-decoration: none;
+}
+
+.productos-detalles:hover {
+    color: #290D0D;
     text-decoration: none;
 }
