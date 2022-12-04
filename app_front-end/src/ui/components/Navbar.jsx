@@ -95,7 +95,7 @@ export const Navbar = (
                         {!usuarioRegistrado &&
                             <div className="navbar-collapse collapse dual-collapse2 d-flex justify-content-end">
                                 <button
-                                    className="Logs mx-2"
+                                    className="Logs mx-2 py-2"
                                     onClick={onLogin}
                                 >
                                     <span>Iniciar sesión</span>
@@ -106,7 +106,7 @@ export const Navbar = (
                             <div className="navbar-collapse collapse dual-collapse2 d-flex justify-content-end">
                                 <span className='nombre-usuario'>{nombreUsuario}</span>
                                 <button
-                                    className="Logs mx-2"
+                                    className="Logs mx-2 py-2"
                                     onClick={onLogout}
                                 >
                                     <span>Cerrar sesión</span>

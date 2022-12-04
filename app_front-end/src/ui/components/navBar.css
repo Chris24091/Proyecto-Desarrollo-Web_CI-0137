@@ -48,11 +48,14 @@ nav .row {
 }
 
 .Logs {
+    color: white;
     font-family: Signika;
     width: 7em;
-    background-color: #D9D9D9;
-    border-color: black;
+    background-color: #290D0D;
+    border: unset;
+    /* border-color: black; */
     border-radius: 2em;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.75));
 }
 
 .form-inline .form-control {
