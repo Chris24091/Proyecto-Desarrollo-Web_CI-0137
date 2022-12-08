@@ -3,11 +3,12 @@ import { Formik, Form, Field } from 'formik'
 import { useLocation, useNavigate } from 'react-router-dom';
 import queryString from 'query-string';
 import './menu.css'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { getProductosByTipo } from '../helpers/getProductosByTipo';
 import { useForm } from '../../hooks/useForm';
 import { getProductos } from '../helpers/getProductos';
 import { NavLink } from 'react-router-dom';
+import { Pagination } from '../components/Pagination';
 
 export const Menu = () => {
 
@@ -26,12 +27,19 @@ export const Menu = () => {
         searchText: q
     });
 
-
-
     const onSearchSubmit = (event) => {
         event.preventDefault();
         navigate(`?q=${searchText}`);
     }
+
+    const [currentPage, setCurrentPage] = useState(1);
+    const [productsPerPage] = useState(6);
+
+    const indexOfLastProduct = currentPage * productsPerPage;
+    const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
+    const currentProducts = productos.slice(indexOfFirstProduct, indexOfLastProduct);
+
+    const paginate = pageNumber => setCurrentPage(pageNumber);
 
     return (
         <>
@@ -59,7 +67,12 @@ export const Menu = () => {
                     </div>
                 </div>
                 <hr />
-                <FoodList listaProductos={productos} />
+                <FoodList listaProductos={currentProducts} />
+                <Pagination 
+                    productsPerPage={productsPerPage} 
+                    totalProducts={allProducts.length} 
+                    paginate={paginate}
+                />
 
                 <div style={{ display: showError ? '' : 'none' }}>
                     <div className="alert alert-danger animate__animated animate__fadeIn text-center">
