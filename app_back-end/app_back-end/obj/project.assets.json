@@ -776,11 +776,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\CURSOS 22B\\Web\\Proyecto\\Proyecto-Desarrollo-Web_CI-0137\\app_back-end\\app_back-end\\app_back-end.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Proyecto-Desarrollo-Web_CI-0137\\app_back-end\\app_back-end\\app_back-end.csproj",
       "projectName": "app_back-end",
-      "projectPath": "C:\\Users\\Usuario\\Desktop\\CURSOS 22B\\Web\\Proyecto\\Proyecto-Desarrollo-Web_CI-0137\\app_back-end\\app_back-end\\app_back-end.csproj",
+      "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyecto-Desarrollo-Web_CI-0137\\app_back-end\\app_back-end\\app_back-end.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Desktop\\CURSOS 22B\\Web\\Proyecto\\Proyecto-Desarrollo-Web_CI-0137\\app_back-end\\app_back-end\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\Desktop\\Proyecto-Desarrollo-Web_CI-0137\\app_back-end\\app_back-end\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",

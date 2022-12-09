@@ -1,5 +1,6 @@
-import { Link } from 'react-router-dom';
+import {useNavigate } from 'react-router-dom';
 import '../pages/menu.css'
+import { getProductoByName } from '../helpers/getProductoByName';
 
 export const FoodCard = ({ 
     name,
@@ -8,9 +9,17 @@ export const FoodCard = ({
 
     const foodImageUrl = `/src/assets/Images/${ name }.svg`;
 
+    const producto = getProductoByName(name);
+
+    const navigate = useNavigate();
+    const irDetalles = () => {
+        navigate(`/producto/${name}`, {
+            state:{producto:producto}
+        });
+    }
+
     return (
-        <Link className='productos-detalles' to={`/producto/${ name }`}>
-            <div className="col d-flex justify-content-center">
+            <div className="col d-flex justify-content-center" onClick={irDetalles}>
                 <div className="card" >
                     <img src={ foodImageUrl } className="card-img" alt={ name }/>
                     <div className="card-body">
@@ -19,6 +28,5 @@ export const FoodCard = ({
                     </div>
                 </div>
             </div>
-        </Link>
     )
 }

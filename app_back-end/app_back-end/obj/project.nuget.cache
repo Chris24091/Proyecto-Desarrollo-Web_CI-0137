@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kxgauX+i+DCKHEloITuHaGCeQJTtTpu/3ecSIA2xqKdSKCDyMBIV7AL/ty6KMaRhcYMO7+v6JBuQ2FC0F6ApzA==",
+  "dgSpecHash": "hJhvtfnLGDAO+9ij+rI0YoRiASJIDFPpfpJcfsJXJ/6FLSD/7tl09pOWjXku2G5mmhDhyuaUQj9P0MWBSq/knQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\CURSOS 22B\\Web\\Proyecto\\Proyecto-Desarrollo-Web_CI-0137\\app_back-end\\app_back-end\\app_back-end.csproj",
+  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\Proyecto-Desarrollo-Web_CI-0137\\app_back-end\\app_back-end\\app_back-end.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
