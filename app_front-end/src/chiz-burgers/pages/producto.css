@@ -28,9 +28,13 @@
 
 .ingredientes {
     padding: 2rem;
-    padding-right: 4rem;
+    padding-right: 0rem;
+    padding-left: 6rem;
     border-right: solid;
     border-width: 0.15rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .ingredientes-titulo{
