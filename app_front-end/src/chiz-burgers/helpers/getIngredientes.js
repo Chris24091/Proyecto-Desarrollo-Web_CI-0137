@@ -8,7 +8,7 @@ export const getIngredientes = (name) => {
     const [ingredientes, setIngredientes] = useState([]);
 
     useEffect(() => {
-        productosApi.get(`GetIngredients?productName=${name}`)
+        productosApi.get(`GetIngredientes?productName=${name}`)
         .then(result => {
             const data = result.data;
             setIngredientes(data);
