@@ -58,6 +58,12 @@ nav .row {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.75));
 }
 
+.Logs:hover {
+    background-color: #463b3b;
+    color: white;
+}
+
+
 .form-inline .form-control {
     display: inline-block;
     width: auto;

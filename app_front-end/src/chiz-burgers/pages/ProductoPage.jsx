@@ -1,4 +1,5 @@
 import {useLocation} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './producto.css'
 
 
@@ -37,6 +38,11 @@ export const ProductoPage = ( {
                     </div>
                 </div>
             </div>
+            <div className='link-productos text-center'>
+                        <NavLink to="/menu">
+                            Volver al menú
+                        </NavLink>
+                    </div>
         </>
     )
 }
