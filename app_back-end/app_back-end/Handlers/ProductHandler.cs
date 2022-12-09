@@ -1,45 +1,50 @@
 ﻿using app_back_end.Models;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace app_back_end.Handlers
 {
     public class ProductHandler
     {
-        public List<ProductModel> getProducts()
+        private SqlConnection conexion;
+        private string rutaConexion;
+        public ProductHandler()
         {
-            List<ProductModel> products = new List<ProductModel>();
-            products.Add(new ProductModel
+            var builder = WebApplication.CreateBuilder();
+            rutaConexion =
+            builder.Configuration.GetConnectionString("BaseDeDatos");
+            conexion = new SqlConnection(rutaConexion);
+        }
+        private DataTable CrearTablaConsulta(string consulta)
+        {
+            SqlCommand comandoParaConsulta = new SqlCommand(consulta,
+            conexion);
+            SqlDataAdapter adaptadorParaTabla = new
+            SqlDataAdapter(comandoParaConsulta);
+            DataTable consultaFormatoTabla = new DataTable();
+            conexion.Open();
+            adaptadorParaTabla.Fill(consultaFormatoTabla);
+            conexion.Close();
+            return consultaFormatoTabla;
+        }
+
+        public List<ProductModel> GetProducts()
+        {
+            List<ProductModel> productos = new List<ProductModel>();
+            string consulta = "SELECT * FROM PRODUCT";
+            DataTable tablaResultado = CrearTablaConsulta(consulta);
+            foreach (DataRow columna in tablaResultado.Rows)
             {
-                Id = "producto2",
-                Name = "The double trouble",
-                Price = 7.99m,
-                Type = "Hamburguesa",
-                Calories = 660,
-            });
-            products.Add(new ProductModel
-            {
-                Id = "producto1",
-                Name = "The moody bacon",
-                Price = 2.99m,
-                Type = "Hamburguesa",
-                Calories = 660,
-            });
-            products.Add(new ProductModel
-            {
-                Id = "producto5",
-                Name = "The crispy risky",
-                Price = 4.99m,
-                Type = "Hamburguesa",
-                Calories = 660,
-            });
-            products.Add(new ProductModel
-            {
-                Id = "producto7",
-                Name = "The tasty rings",
-                Price = 1.99m,
-                Type = "rings",
-                Calories = 660,
-            });
-            return products;
+                productos.Add(
+                new ProductModel
+                {
+                    Name = Convert.ToString(columna["name"]),
+                    Price = Convert.ToDecimal(columna["price"]),
+                    Type = Convert.ToString(columna["type"]),
+                    Calories = Convert.ToInt32(columna["calories"])
+                });
+            }
+            return productos;
         }
     }
 }

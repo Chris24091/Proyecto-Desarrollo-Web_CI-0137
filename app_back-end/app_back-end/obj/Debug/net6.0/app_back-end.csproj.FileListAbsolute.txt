@@ -25,3 +25,9 @@ C:\Users\Usuario\Desktop\CURSOS 22B\Web\Proyecto\Proyecto-Desarrollo-Web_CI-0137
 C:\Users\Usuario\Desktop\CURSOS 22B\Web\Proyecto\Proyecto-Desarrollo-Web_CI-0137\app_back-end\app_back-end\obj\Debug\net6.0\app_back-end.pdb
 C:\Users\Usuario\Desktop\CURSOS 22B\Web\Proyecto\Proyecto-Desarrollo-Web_CI-0137\app_back-end\app_back-end\obj\Debug\net6.0\app_back-end.genruntimeconfig.cache
 C:\Users\Usuario\Desktop\CURSOS 22B\Web\Proyecto\Proyecto-Desarrollo-Web_CI-0137\app_back-end\app_back-end\obj\Debug\net6.0\ref\app_back-end.dll
+C:\Users\Usuario\Desktop\CURSOS 22B\Web\Proyecto\Proyecto-Desarrollo-Web_CI-0137\app_back-end\app_back-end\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\Usuario\Desktop\CURSOS 22B\Web\Proyecto\Proyecto-Desarrollo-Web_CI-0137\app_back-end\app_back-end\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\Usuario\Desktop\CURSOS 22B\Web\Proyecto\Proyecto-Desarrollo-Web_CI-0137\app_back-end\app_back-end\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\Usuario\Desktop\CURSOS 22B\Web\Proyecto\Proyecto-Desarrollo-Web_CI-0137\app_back-end\app_back-end\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\Usuario\Desktop\CURSOS 22B\Web\Proyecto\Proyecto-Desarrollo-Web_CI-0137\app_back-end\app_back-end\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Usuario\Desktop\CURSOS 22B\Web\Proyecto\Proyecto-Desarrollo-Web_CI-0137\app_back-end\app_back-end\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

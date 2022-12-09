@@ -13,7 +13,7 @@ namespace app_back_end.Controllers
         {
             ProductHandler productHandler = new ProductHandler();
 
-            var result = productHandler.getProducts();
+            var result = productHandler.GetProducts();
 
             return Ok(result);
         }
