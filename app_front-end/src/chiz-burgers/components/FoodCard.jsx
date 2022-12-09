@@ -2,17 +2,14 @@ import { Link } from 'react-router-dom';
 import '../pages/menu.css'
 
 export const FoodCard = ({ 
-    id,
     name,
     price,
 }) => {
 
-    const foodImageUrl = `/src/assets/Images/${ id }.svg`;
-
-    // const charactesByHero =  (<p>{ characters }</p>);
+    const foodImageUrl = `/src/assets/Images/${ name }.svg`;
 
     return (
-        <Link className='productos-detalles' to={`/producto/${ id }`}>
+        <Link className='productos-detalles' to={`/producto/${ name }`}>
             <div className="col d-flex justify-content-center">
                 <div className="card" >
                     <img src={ foodImageUrl } className="card-img" alt={ name }/>

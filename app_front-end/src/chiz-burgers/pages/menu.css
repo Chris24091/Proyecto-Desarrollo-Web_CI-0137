@@ -157,8 +157,6 @@ p {
 .paginacion {
     display: flex;
     justify-content: center;
-    margin-bottom: 0rem;
-    margin-top: 1rem;
 }
 
 #paginacion-link {
@@ -167,4 +165,8 @@ p {
     border-width: 0.15rem;
     border-color: #290D0D;
     cursor: pointer;
+}
+
+#nav-paginacion {
+    margin: 0rem;
 }

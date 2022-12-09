@@ -10,7 +10,7 @@ export const Pagination = ({ productsPerPage, totalProducts, paginate }) => {
     return (
         <div className='paginacion'>
             <nav>
-                <ul className='pagination'>
+                <ul className='pagination' id="nav-paginacion">
                     {pageNumbers.map(number => (
                         <li key={number} className='page-item' id="paginacion-item">
                             <a onClick={() => paginate(number)} className='page-link' id="paginacion-link">

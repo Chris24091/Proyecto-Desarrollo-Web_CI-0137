@@ -9,7 +9,6 @@ export const getProductosByTipo = ( tipo = '' ) => {
     let productos = getProductos();
     // if ( tipo.length === 0 ) return [];
 
-    console.log(productos);
     const byTipo = productos.filter(
         producto => producto.type.toLocaleLowerCase().includes( tipo )
     );

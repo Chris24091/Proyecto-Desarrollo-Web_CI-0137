@@ -29,7 +29,7 @@ export const AppRoutes = (
           <Route path="menu" element={<Menu />} />
           <Route path="promociones" element={<Promociones />} />
           <Route path="contacto" element={<ContactoPage />} />
-          <Route path="producto/:id" element={<ProductoPage />}/>
+          <Route path="producto/:name" element={<ProductoPage />}/>
 
           <Route path="/" element={<Navigate to="/home" />} />
         </Routes>

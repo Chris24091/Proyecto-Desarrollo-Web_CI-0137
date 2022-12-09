@@ -1,14 +1,15 @@
 import { useParams } from "react-router-dom";
-import { getProductoById } from "../helpers/getProductoById"
+import { getProductoByName } from "../helpers/getProductoByName"
 import './producto.css'
 
 
 export const ProductoPage = ({
 
 }) => {
-    const { id } = useParams();
-    const foodImageUrl = `/src/assets/Images/${id}.svg`;
-    const producto = getProductoById( id );
+    const { name } = useParams();
+    const foodImageUrl = `/src/assets/Images/${name}.svg`;
+    const producto = getProductoByName( name.toString() );
+
     return (
         <>
             <h1 className="nombre-producto">{producto.name}</h1>
