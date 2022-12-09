@@ -47,20 +47,15 @@ namespace app_back_end.Handlers
             return productos;
         }
 
-        public List<IngredienteModel> GetIngredients(string productName)
+        public List<string> GetIngredients(string productName)
         {
-            List<IngredienteModel> ingredientes = new List<IngredienteModel>();
+            List<string> ingredientes = new List<string>();
             string consulta = "Select ingredient from INGREDIENT where productName = '" + productName.ToString() + "'";
             DataTable tabla = CrearTablaConsulta(consulta);
 
             foreach (DataRow columna in tabla.Rows)
             {
-                ingredientes.Add(
-                    new IngredienteModel 
-                    { 
-                        ProductName = productName,
-                        Ingredient = Convert.ToString(columna["ingredient"]) 
-                    });
+                ingredientes.Add(Convert.ToString(columna["ingredient"]));
             }
 
             return ingredientes;

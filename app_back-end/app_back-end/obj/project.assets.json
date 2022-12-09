@@ -771,19 +771,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
+    "C:\\Users\\XSF\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Proyecto-Desarrollo-Web_CI-0137\\app_back-end\\app_back-end\\app_back-end.csproj",
+      "projectUniqueName": "C:\\Users\\XSF\\Documents\\Proyecto-Desarrollo-Web_CI-0137\\app_back-end\\app_back-end\\app_back-end.csproj",
       "projectName": "app_back-end",
-      "projectPath": "C:\\Users\\Usuario\\Desktop\\Proyecto-Desarrollo-Web_CI-0137\\app_back-end\\app_back-end\\app_back-end.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Desktop\\Proyecto-Desarrollo-Web_CI-0137\\app_back-end\\app_back-end\\obj\\",
+      "projectPath": "C:\\Users\\XSF\\Documents\\Proyecto-Desarrollo-Web_CI-0137\\app_back-end\\app_back-end\\app_back-end.csproj",
+      "packagesPath": "C:\\Users\\XSF\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\XSF\\Documents\\Proyecto-Desarrollo-Web_CI-0137\\app_back-end\\app_back-end\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\XSF\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -841,7 +841,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

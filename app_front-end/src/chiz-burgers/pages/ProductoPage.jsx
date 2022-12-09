@@ -18,10 +18,12 @@ export const ProductoPage = ( {
                     <h2 className="ingredientes-titulo">Ingredientes</h2>
                     { <ul className="lista-ingredientes">
                         {
-                            // location.state.producto.ingredients.map((ingrediente, ingID) => (
-                            //     <li key={ingID} className="ingrediente">{ingrediente}</li>
-                            // ))
-                            console.log(location.state.ingredientes)
+                            location.state.ingredientes?.map((ingrediente, ingID) => (
+                                <li key={ingID} className="ingrediente">{ingrediente}</li>
+                            ))
+
+                            // console.log(location.state.ingredientes)
+
                         }
                     </ul> }
                 </div>
