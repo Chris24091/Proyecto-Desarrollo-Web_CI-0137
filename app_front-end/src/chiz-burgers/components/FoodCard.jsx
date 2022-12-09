@@ -1,6 +1,7 @@
 import {useNavigate } from 'react-router-dom';
 import '../pages/menu.css'
 import { getProductoByName } from '../helpers/getProductoByName';
+import { getIngredientes } from '../helpers/getIngredientes';
 
 export const FoodCard = ({ 
     name,
@@ -10,11 +11,12 @@ export const FoodCard = ({
     const foodImageUrl = `/src/assets/Images/${ name }.svg`;
 
     const producto = getProductoByName(name);
+    const ingredientes = getIngredientes(name);
 
     const navigate = useNavigate();
     const irDetalles = () => {
         navigate(`/producto/${name}`, {
-            state:{producto:producto}
+            state:{producto:producto, ingredientes:ingredientes}
         });
     }
 

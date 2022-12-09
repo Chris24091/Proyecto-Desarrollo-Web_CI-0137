@@ -16,17 +16,18 @@ export const ProductoPage = ( {
                 <img src={foodImageUrl} className="card-img-producto col d-flex justify-content-start" alt={location.state.producto.name} />
                 <div className="ingredientes col">
                     <h2 className="ingredientes-titulo">Ingredientes</h2>
-                    {/* <ul className="lista-ingredientes">
+                    { <ul className="lista-ingredientes">
                         {
-                            producto.ingredientes.map((ingrediente, ingID) => (
-                                <li key={ingID} className="ingrediente">{ingrediente}</li>
-                            ))
+                            // location.state.producto.ingredients.map((ingrediente, ingID) => (
+                            //     <li key={ingID} className="ingrediente">{ingrediente}</li>
+                            // ))
+                            console.log(location.state.ingredientes)
                         }
-                    </ul> */}
+                    </ul> }
                 </div>
                 <div className="desc-producto col">
                     <div className="cal">
-                        <p className="calorias">{location.state.producto.calorias}</p>
+                        <p className="calorias">{location.state.producto.calories} Cal</p>
                     </div>
                     <div className="precio-prod">
                         <p className="precio-titulo">Precio:</p>

@@ -17,5 +17,15 @@ namespace app_back_end.Controllers
 
             return Ok(result);
         }
+
+        [HttpGet("GetIngredientes")]
+        public async Task<IActionResult> GetIngredients(string productName)
+        {
+            ProductHandler productHandler = new ProductHandler();
+
+            var result = productHandler.GetIngredients(productName);
+
+            return Ok(result);
+        }
     }
 }
