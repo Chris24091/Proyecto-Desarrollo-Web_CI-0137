@@ -18,14 +18,4 @@ export const getProductos = (props) => {
         });
     }, []);
     return productos;
-
-    // console.log("Hoal", productos);
-    // useEffect( () => {
-    //     axios.get("https://localhost:49155/Products/GetProductos")
-    //         .then((response: AxiosResponse<any>) => {
-    //             console.log(response.data);
-    //         })
-    // })
-    // console.log("Hola");
-    // return productos;
 }

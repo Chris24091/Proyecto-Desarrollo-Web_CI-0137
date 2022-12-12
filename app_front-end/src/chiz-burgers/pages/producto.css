@@ -18,6 +18,10 @@
     margin-top: 5rem;
 }
 
+#carta {
+    cursor: pointer;
+}
+
 .nombre-producto {
     margin-top: 3rem;
 }

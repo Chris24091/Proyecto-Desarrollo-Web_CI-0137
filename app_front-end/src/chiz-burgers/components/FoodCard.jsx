@@ -22,7 +22,7 @@ export const FoodCard = ({
 
     return (
             <div className="col d-flex justify-content-center" onClick={irDetalles}>
-                <div className="card" >
+                <div className="card" id="carta">
                     <img src={ foodImageUrl } className="card-img" alt={ name }/>
                     <div className="card-body">
                         <p className='card-name'>{name}</p>
