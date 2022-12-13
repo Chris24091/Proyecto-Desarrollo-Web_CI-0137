@@ -18,7 +18,7 @@ export const Footer = () => {
           <div className='col-4 d-flex justify-content-end align-items-center'>
             <p className='footer-text1'>wilmer.araya@ucr.ac.cr</p>
             <p className='footer-text1'>christopher.perez.cr@gmail.com</p>
-            <IconContext.Provider value={{ style: { fontSize: '25px', color: "rgb(218, 212, 199)", marginBottom:'15px' } }}>
+            <IconContext.Provider value={{ style: { fontSize: '25px', color: "rgb(218, 212, 199)", marginBottom:'0px' } }}>
               <div>
               <ImFacebook2 />
               </div>

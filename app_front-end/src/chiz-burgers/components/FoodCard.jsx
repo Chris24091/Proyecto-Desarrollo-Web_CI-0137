@@ -26,7 +26,7 @@ export const FoodCard = ({
                     <img src={ imagen } className="card-img" alt={ name }/>
                     <div className="card-body">
                         <p className='card-name'>{name}</p>
-                        <p className='card-price'>{price}</p>
+                        <p className='card-price'>${price}</p>
                     </div>
                 </div>
             </div>
