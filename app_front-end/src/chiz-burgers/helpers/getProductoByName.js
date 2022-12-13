@@ -1,9 +1,8 @@
 import { getProductos } from "./getProductos";
 
 
-export const getProductoByName = ( name ) => {
+export const getProductoByName = ( id ) => {
 
     let productos = getProductos();
-    console.log(productos);
-    return productos.find(producto => producto.name === name);
+    return productos.find(producto => producto.id === id);
 }

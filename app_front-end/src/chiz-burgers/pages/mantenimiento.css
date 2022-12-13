@@ -20,12 +20,6 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.75));
 }
 
-.card-menu:hover {
-    transition: all .2s ease-in-out;
-    transform: scale(1.05);
-    filter: drop-shadow(0px 9px 9px #e5e751ee);
-}
-
 .card-body {
     display: flex;
     flex-direction: row;
@@ -38,6 +32,21 @@
     border-width: 2px;
     border-radius: 20px;
 }
+
+.card-bodyMantain {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #E4E751;
+    border: solid;
+    border-color: #290D0D;
+    border-width: 2px;
+    border-radius: 20px;
+}
+
 
 .cuerpo-carta {
     height: 100px;
@@ -143,6 +152,64 @@ p {
         padding-right: 1rem;
         text-decoration: none;
     }
+
+
+    .button-editar {
+        font-family: Signika;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.75));
+    }
+    
+        .button-editar {
+            width: 83.86px;
+            color: white;
+            font-size: 1rem;
+            background-color: #290D0D;
+            border-color: transparent;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+    
+        .button-editar:hover {
+            color: rgb(255, 255, 255);
+            background-color: #524444;
+            border-radius: 20px;
+            border-color: transparent;
+        }
+
+        .button-eliminar {
+            font-family: Signika;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.75));
+        }
+        
+            .button-eliminar {
+                color: white;
+                font-size: 1rem;
+                background-color: #d30707;
+                border-color: transparent;
+                border-radius: 20px;
+                /* padding-top: .5rem;
+                padding-bottom: .5rem; */
+                /* padding-left: 1rem;
+                padding-right: 1rem; */
+                text-decoration: none;
+            }
+        
+            .button-eliminar:hover {
+                color: rgb(255, 255, 255);
+                background-color: #ff0707;
+                border-radius: 20px;
+                border-color: transparent;
+                outline-color: #d30707;
+            }
+
+            .button-eliminar:active {
+                color: rgb(255, 255, 255);
+                background-color: #ff0707;
+                border-radius: 20px;
+                border-color: transparent;
+                outline-color: #d30707;
+            }
+    
 
 .productos-detalles {
     color: #290D0D;

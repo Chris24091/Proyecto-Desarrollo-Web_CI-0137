@@ -6,6 +6,9 @@ import { Promociones } from '../pages/PromocionesPage';
 import { ProductoPage } from '../pages/ProductoPage'
 
 import { ContactoPage } from '../pages/ContactoPage';
+import { Mantenimiento } from '../pages/MantenimientoPage';
+import { AgregarProducto } from '../pages/AgregarProducto';
+import { EditarProducto } from '../pages/EditarProducto';
 
 export const AppRoutes = (
   {
@@ -29,7 +32,10 @@ export const AppRoutes = (
           <Route path="menu" element={<Menu />} />
           <Route path="promociones" element={<Promociones />} />
           <Route path="contacto" element={<ContactoPage />} />
-          <Route path="producto/:name" element={<ProductoPage />}/>
+          <Route path="menu/:name" element={<ProductoPage />}/>
+          <Route path="mantenimiento" element={<Mantenimiento />}/>
+          <Route path="mantenimiento/agregar" element={<AgregarProducto />}/>
+          <Route path="mantenimiento/:name" element={<EditarProducto />}/>
 
           <Route path="/" element={<Navigate to="/home" />} />
         </Routes>

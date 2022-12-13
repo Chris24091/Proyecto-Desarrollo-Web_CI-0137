@@ -1,8 +1,8 @@
-import { FoodList } from '../components';
+import { FoodListEditable } from '../components/FoodListEditable';
 import { Formik, Form, Field } from 'formik'
 import { useLocation, useNavigate } from 'react-router-dom';
 import queryString from 'query-string';
-import './menu.css'
+import './mantenimiento.css'
 import { useState, useEffect } from 'react';
 import { getProductosByTipo } from '../helpers/getProductosByTipo';
 import { useForm } from '../../hooks/useForm';
@@ -10,7 +10,7 @@ import { getProductos } from '../helpers/getProductos';
 import { NavLink } from 'react-router-dom';
 import { Pagination } from '../components/Pagination';
 
-export const Menu = () => {
+export const Mantenimiento = () => {
 
     const navigate = useNavigate();
     const location = useLocation();
@@ -67,7 +67,14 @@ export const Menu = () => {
                     </div>
                 </div>
                 <hr />
-                <FoodList listaProductos={currentProducts} />
+
+                <div className='link-productos text-center mb-5'>
+                        <NavLink to="/mantenimiento/agregar">
+                            Agregar producto
+                        </NavLink>
+                    </div>
+
+                <FoodListEditable listaProductos={currentProducts} />
                 <Pagination 
                     productsPerPage={productsPerPage} 
                     totalProducts={allProducts.length} 

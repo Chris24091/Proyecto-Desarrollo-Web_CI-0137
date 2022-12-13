@@ -7,20 +7,19 @@ export const ProductoPage = ( {
 
 } ) => {
     const location = useLocation();
-    const foodImageUrl = `/src/assets/Images/${location.state.producto.name}.svg`;
 
     return (
         <>
             <h1 className="nombre-producto">{location.state.producto.name}</h1>
             <hr/>
             <div className="producto-card row">
-                <img src={foodImageUrl} className="card-img-producto col d-flex justify-content-start" alt={location.state.producto.name} />
+                <img src={location.state.producto.imagen} className="card-img-producto col d-flex justify-content-start" alt={location.state.producto.name} />
                 <div className="ingredientes col">
                     <h2 className="ingredientes-titulo">Ingredientes</h2>
                     { <ul className="lista-ingredientes">
                         {
-                            location.state.ingredientes?.map((ingrediente, ingID) => (
-                                <li key={ingID} className="ingrediente">{ingrediente}</li>
+                            location.state.ingredientes?.map((ingrediente) => (
+                                <li key={ingrediente} className="ingrediente">{ingrediente}</li>
                             ))
 
                             // console.log(location.state.ingredientes)

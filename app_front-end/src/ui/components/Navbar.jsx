@@ -88,6 +88,13 @@ export const Navbar = (
                                 Contacto
                                 <div className="underline"></div>
                             </NavLink>
+                            <NavLink
+                                className={({ isActive }) => `nav-item  mx-1 nav-link  ${isActive ? 'active' : ''}`}
+                                to="/mantenimiento"
+                            >
+                                Mantenimiento
+                                <div className="underline"></div>
+                            </NavLink>
                         </div>
                     </div>
 
